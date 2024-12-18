@@ -9,30 +9,29 @@ pipeline {
         booleanParam(name :'executeTests', description:'Execute the tests', defaultValue:false)
     }
 
-    stages {
-        stage('Build') {
-            steps {
-                // sh 'npm install'
-                // sh 'npm run build'
-                echo "Build"
-            }
+    
+    stage('Build') {
+        steps {
+            // sh 'npm install'
+            // sh 'npm run build'
+            echo "Build"
         }
-        stage('Test') {
-            steps {
-                // sh 'npm run test'
-                echo "Test"
+    }
+    stage('Test') {
+        steps {
+            // sh 'npm run test'
+            echo "Test"
 
-            }
         }
-        stage('Build Image') {
-            steps {
-                echo "Build Image"
-            }
+    }
+    stage('Build Image') {
+        steps {
+            echo "Build Image"
         }
-        stage ('Deploy') {
-            steps {
-                echo "Deploy"
-            }
+    }
+    stage ('Deploy') {
+        steps {
+            echo "Deploy"
         }
     }
 }
