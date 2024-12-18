@@ -7,21 +7,4 @@ pipeline {
             echo 'Build'
         }
     }
-    stage('Test') {
-        steps {
-            // sh 'npm run test'
-            echo 'Test'
-
-        }
-    }
-    stage('Build Image') {
-        steps {
-            echo 'Build Image'
-        }
-    }
-    stage ('Deploy') {
-        steps {
-            echo 'Deploy'
-        }
-    }
 }
