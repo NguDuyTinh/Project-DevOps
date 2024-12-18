@@ -1,5 +1,5 @@
 import os
-
+import rsa
 # Định nghĩa dấu hiệu của file JPG và PNG
 JPG_SIGNATURE = b'\xFF\xD8'
 JPG_END_SIGNATURE = b'\xFF\xD9'
@@ -77,7 +77,7 @@ def extract_images_from_volume(volume_file_path, output_dir):
         return []
 
 # Ví dụ sử dụng
-volume_file = "E:/image003.vol"  # Thay đổi đường dẫn tới file volume
+volume_file = "C:/image003.vol"  # Thay đổi đường dẫn tới file volume
 output_dir = "C:/recovered_images1/"  # Đường dẫn tới thư mục lưu ảnh phục hồi
 
 recovered_files = extract_images_from_volume(volume_file, output_dir)
